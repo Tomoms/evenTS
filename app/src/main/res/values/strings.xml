@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">evenTS</string>
+    <string name="categoria_aperitivi">Aperitivi</string>
+    <string name="categoria_feste">Feste</string>
+    <string name="categoria_sagre">Sagre</string>
+    <string name="prenota">PRENOTA</string>
+    <string name="conferma">Prenotazione effettuata</string>
+</resources>

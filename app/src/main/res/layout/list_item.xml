@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:minHeight="@dimen/item_height">
+
+    <TextView
+        android:layout_width="@dimen/img_height"
+        android:layout_height="wrap_content"
+        android:id="@+id/sconto"
+        android:layout_above="@id/image"
+        android:layout_alignTop="@id/titolo"
+        android:textColor="#00d600"
+        tools:text="-25%"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/img_height"
+        android:layout_height="@dimen/img_height"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dp"
+        android:background="#ffffff"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="@dimen/img_height"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:layout_below="@id/image"
+        tools:text="27 luglio"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="@dimen/img_height"
+        android:layout_height="wrap_content"
+        android:id="@+id/ora"
+        android:layout_below="@id/data"
+        tools:text="18:30"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titolo"
+        android:layout_toRightOf="@id/image"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        tools:text="Aperitivo uno" />
+
+    <TextView
+        android:id="@+id/indirizzo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titolo"
+        android:layout_below="@id/titolo"
+        android:layout_toRightOf="@id/image"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="false"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="italic"
+        tools:text="piazza dell'Unità d'Italia" />
+
+    <TextView
+        android:id="@+id/descr_breve"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/indirizzo"
+        android:layout_toRightOf="@id/image"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="false"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="Aperitivo inventato in piazza, prova prova prova prova." />
+
+</RelativeLayout>
